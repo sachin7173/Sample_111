@@ -17,6 +17,11 @@ public static void openBrowser() throws IOException, InterruptedException {
 	option.addArguments("--disable-notifications");
 	driver=new ChromeDriver(option);
 	
+	
+	
+	
+	
+	
 	driver.manage().timeouts().implicitlyWait(20,TimeUnit.SECONDS);
 	driver.get(UtilityClass.getPropertyFile("url"));
 	Thread.sleep(2000);
